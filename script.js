@@ -49,10 +49,3 @@
 // };
 
 // printMeAgainParameter(50, 20);
-
-function sum(a, b) {
-  let ret = a + b;
-  return ret;
-}
-
-sum(2, 3);
