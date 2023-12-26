@@ -1,14 +1,14 @@
-JAVASCRIPT FUNCTION NOTES
+JAVASCRIPT FUNCTION NOTES🍳
 
--What and Why JavaScript Functions:
+-What and Why JavaScript Functions:💨
 A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output.
 
 
--CALL & DECLARATION OF FUNCTION:
+-CALL & DECLARATION OF FUNCTION:⛔
 declare and define are the same, and they mean when you write all the code for your function. At that point the function just sits there doing nothing. call is when you tell the JavaScript interpreter to run the code in your function
 
 
--REST PARAMETER:
+-REST PARAMETER:▶
 A function defenition can have only one rest parameter and that parameter must be the last parameter of that function.
 
 Rest parameter alllows a function to accept any number of arguements as an array.!
@@ -18,9 +18,12 @@ syntax = (...X)
 Rest parameter = The rest of the parameters exist in that particular function!!
 
 
--DEFAULT PARAMETER:
+-DEFAULT PARAMETER:❓
 Setting JavaScript default parameters for a function:
-In JavaScript, a parameter has a default value of undefined. It means that if you don't pass the arguments into the function, its parameters will have the default values of undefined 
+In JavaScript, a parameter has a default value of undefined. It means that if you don't pass the arguments into the function, its parameters will have the default values of undefined.
+
+Arrow function:
+
 
 
 

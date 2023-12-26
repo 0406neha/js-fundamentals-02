@@ -54,17 +54,24 @@
 // // aNumber('10', 10);
 // aNumber('10', '10');
 
-function calc(a, b = 0) {
-  return 2 * (a + b);
-}
+// function calc(a, b = 0) {
+//   return 2 * (a + b);
+// }
 
-const number = calc(2);
-console.log(number);
+// const number = calc(2);
+// console.log(number);
 
-function sum(x, y) {
-  let ret = x + y;
-  return ret;
-}
+// function sum(x, y) {
+//   let ret = x + y;
+//   return ret;
+// }
 
-const add = sum(4, 5);
-console.log(add);
+// const add = sum(4, 5);
+// console.log(add);
+
+const join = (x, y) => {
+  return x + y;
+};
+
+join(2, 3);
+console.log();
