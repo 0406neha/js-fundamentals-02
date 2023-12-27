@@ -69,9 +69,30 @@
 // const add = sum(4, 5);
 // console.log(add);
 
-const join = (x, y) => {
-  return x + y;
-};
+const calcAge3 = (birthYear) => 2024 - birthYear;
+const age3 = calcAge3(2004);
+console.log(age3);
 
-join(2, 3);
-console.log();
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = 2024 - birthYear;
+  const retirement = 60 - age;
+  // return retirement;
+  return `${firstName} retires in ${retirement}  years`;
+};
+console.log(yearsUntilRetirement(2004, 'Neha'));
+console.log(yearsUntilRetirement(2006, 'Isha'));
+console.log(yearsUntilRetirement(2000, 'Divya'));
+
+function cutSquarePieces(box) {
+  return box * 4;
+}
+
+function squareBox(first, second) {
+  const firstBox = cutSquarePieces(first);
+  const secondBox = cutSquarePieces(second);
+
+  const pieces = `First box should have ${firstBox} pieces and second box should have ${secondBox} pieces.`;
+  return pieces;
+}
+
+console.log(squareBox(2, 4));
