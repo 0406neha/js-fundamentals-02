@@ -69,30 +69,49 @@
 // const add = sum(4, 5);
 // console.log(add);
 
-const calcAge3 = (birthYear) => 2024 - birthYear;
-const age3 = calcAge3(2004);
-console.log(age3);
+// const calcAge3 = (birthYear) => 2024 - birthYear;
+// const age3 = calcAge3(2004);
+// console.log(age3);
 
-const yearsUntilRetirement = (birthYear, firstName) => {
-  const age = 2024 - birthYear;
-  const retirement = 60 - age;
-  // return retirement;
-  return `${firstName} retires in ${retirement}  years`;
+// const yearsUntilRetirement = (birthYear, firstName) => {
+//   const age = 2024 - birthYear;
+//   const retirement = 60 - age;
+//   // return retirement;
+//   return `${firstName} retires in ${retirement}  years`;
+// };
+// console.log(yearsUntilRetirement(2004, 'Neha'));
+// console.log(yearsUntilRetirement(2006, 'Isha'));
+// console.log(yearsUntilRetirement(2000, 'Divya'));
+
+// function cutSquarePieces(box) {
+//   return box * 4;
+// }
+
+// function squareBox(first, second) {
+//   const firstBox = cutSquarePieces(first);
+//   const secondBox = cutSquarePieces(second);
+
+//   const pieces = `First box should have ${firstBox} pieces and second box should have ${secondBox} pieces.`;
+//   return pieces;
+// }
+
+// console.log(squareBox(2, 4));
+
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+
+let scoreDolphins = calcAverage(85, 54, 41);
+let scoreKoalas = calcAverage(23, 34, 27);
+
+console.log(scoreDolphins, scoreKoalas);
+
+const checkWinner = function (avgDolphins, avgKoalas) {
+  if (avgDolphins >= 2 * avgKoalas) {
+    console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
+  } else if (avgKoalas >= 2 * avgDolphins) {
+    console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
+  } else {
+    console.log('No one wins...');
+  }
 };
-console.log(yearsUntilRetirement(2004, 'Neha'));
-console.log(yearsUntilRetirement(2006, 'Isha'));
-console.log(yearsUntilRetirement(2000, 'Divya'));
 
-function cutSquarePieces(box) {
-  return box * 4;
-}
-
-function squareBox(first, second) {
-  const firstBox = cutSquarePieces(first);
-  const secondBox = cutSquarePieces(second);
-
-  const pieces = `First box should have ${firstBox} pieces and second box should have ${secondBox} pieces.`;
-  return pieces;
-}
-
-console.log(squareBox(2, 4));
+checkWinner(scoreDolphins, scoreKoalas);
